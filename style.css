@@ -1,0 +1,25 @@
+form, input {
+    display: grid;
+    margin: 5px;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+}
+
+#reservationForm {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* #date{
+    
+} */
