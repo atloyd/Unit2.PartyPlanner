@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+        <h1>Make a Reservation</h1>
+        <form id="addReservation">
     
+            <label>
+                Name:
+                <input type="text" name="name">
+            </label>
+            <label>
+                Description:
+                <input type="text" name="description">
+            </label>
+            <label>
+                Location:
+                <input type="text" name="location">
+            </label>
+            <label>
+                Date:
+                <input type="datetime-local" name="date">
+            </label>
+            <button>Submit Reservation</button>
+        </form>
+        <h1>Reservations</h1>
+        <ul id="reservations"></ul>
 </body>
 </html>
