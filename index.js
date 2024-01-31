@@ -22,7 +22,6 @@ async function getReservations() {
     const response = await fetch(API_URL);
     const data = await response.json();
     state.reservations = data.data;
-    render();
   } catch {
     console.error(error);
   }
@@ -35,7 +34,6 @@ function renderReservations() {
   }
   const reservationCards = state.reservations.map((reservation) => {
     const li = document.createElement("li");
-    li.classList.add('reservation');
     li.innerHTML = `
           <h2>${reservation.name}</h2>
           <p>${reservation.description}</p>
